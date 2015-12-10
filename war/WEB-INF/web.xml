@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Junkcallos01_web</servlet-name>
+		<servlet-class>com.chanfoofoo.junkcallos01_web.Junkcallos01_webServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>test02_webServlet</servlet-name>
+		<servlet-class>com.chanfoofoo.junkcallos01_web.test02_webServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>StockInterest01_webServlet</servlet-name>
+		<servlet-class>com.chanfoofoo.junkcallos01_web.StockInterest01_webServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Junkcallos01_web</servlet-name>
+		<url-pattern>/junkcallos01_web</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>test02_webServlet</servlet-name>
+		<url-pattern>/test02_web</url-pattern>	
+	</servlet-mapping>	
+
+	<servlet-mapping>
+		<servlet-name>StockInterest01_webServlet</servlet-name>
+		<url-pattern>/StockInterest01_web</url-pattern>	
+	</servlet-mapping>	
+		
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
